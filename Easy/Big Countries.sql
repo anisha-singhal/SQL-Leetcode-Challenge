@@ -24,6 +24,9 @@
 -- +--------------+-------------+--------------+
 
 
+#DONE ON LEETCODE
+
+
 -- Solution
 Select name, population, area
 from world
