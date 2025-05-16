@@ -18,7 +18,6 @@
 -- Performance of the Ad is measured using Click-Through Rate (CTR) where:
 
 
-
 -- Write an SQL query to find the ctr of each Ad.
 
 -- Round ctr to 2 decimal points. Order the result table by ctr in descending order and by ad_id in ascending order in case of a tie.
@@ -55,6 +54,17 @@
 -- for ad_id = 5, ctr = 0.00, Note that ad_id = 5 has no clicks or views.
 -- Note that we don't care about Ignored Ads.
 -- Result table is ordered by the ctr. in case of a tie we order them by ad_id
+
+--MY SOLUTION 
+
+Select ad_id, 
+ROUND(
+     SUM(CASE WHEN action = 'Clicked' then 1 ELSE 0 END) * 100/
+     NULLIF(SUM(CASE WHEN action = 'Clicked' OR action = 'viewed' then 1 else 0 end),0),
+2) as ctr
+FROM Ads
+Group by ad_id
+Order by ctr desc, ad_id asc
 
 -- Solution
 with t1 as(
