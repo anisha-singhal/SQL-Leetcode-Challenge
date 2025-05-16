@@ -64,6 +64,8 @@
 -- Average selling price for product 1 = ((100 * 5) + (15 * 20)) / 115 = 6.96
 -- Average selling price for product 2 = ((200 * 15) + (30 * 30)) / 230 = 16.96
 
+#DONE ON LEETCODE
+
 -- Solution
 Select d.product_id, round((sum(price*units)+0.00)/(sum(units)+0.00),2) as average_price
 from(
