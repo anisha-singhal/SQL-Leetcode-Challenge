@@ -83,6 +83,19 @@
 -- We know nothing about average weather_state in Spain in November 
 -- so we don't include it in the result table. 
 
+-- My Solution
+Select country_name, 
+ CASE
+     when AVG(weather.weather_state) <= 15 then 'Cold'
+     when AVG(weather.weather_state) >= 25 then 'Hot'
+     else 'warm'
+ END as weather_type
+ From Countries
+ join Weather 
+ on Countries.country_id = Weather.country_id
+ where MONTH(day) = 11 AND YEAR(day) = 2019
+ GROUP BY country_name
+
 -- Solution
 Select c.country_name, 
 case when avg(w.weather_state)<=15 then 'Cold'
