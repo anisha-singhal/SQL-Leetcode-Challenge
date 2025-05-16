@@ -60,7 +60,7 @@
 Select ad_id, 
 ROUND(
      SUM(CASE WHEN action = 'Clicked' then 1 ELSE 0 END) * 100/
-     NULLIF(SUM(CASE WHEN action = 'Clicked' OR action = 'viewed' then 1 else 0 end),0),
+     IFNULL(SUM(CASE WHEN action = 'Clicked' OR action = 'viewed' then 1 else 0 end),0),
 2) as ctr
 FROM Ads
 Group by ad_id
