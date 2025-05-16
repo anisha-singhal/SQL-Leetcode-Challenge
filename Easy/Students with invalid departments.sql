@@ -68,6 +68,13 @@
 -- John, Daiana, Steve and Jasmine are enrolled in departments 14, 33, 74 and 77 respectively. 
 -- department 14, 33, 74 and 77 doesn't exist in the Departments table.
 
+--My Solution
+SELECT id, name
+FROM Students
+Left Join Departments
+ON Departments.id = Students.department_id
+Where Departments.id is NULL
+
 -- Solution
 Select s.id, s.name
 from students s left join
