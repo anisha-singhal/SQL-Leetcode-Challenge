@@ -19,7 +19,7 @@
 -- | 13 | 15 | 30 | No       |
 -- | 10 | 20 | 15 | Yes      |
 
-
+#DONE ON LEETCODE
 -- Solution
 select x, y, z,
 case 
