@@ -19,6 +19,8 @@
 -- | I       | Math       |
 -- +---------+------------+
 
+#DONE ON LEETCODE
+
 -- Solution
 select class
 from courses
