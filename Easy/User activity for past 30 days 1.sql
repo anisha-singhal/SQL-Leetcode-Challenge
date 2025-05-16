@@ -45,6 +45,8 @@
 -- +------------+--------------+ 
 -- Note that we do not care about days with zero active users.
 
+#DONE ON LEETCODE
+
 -- Solution
 Select activity_date as day, count(distinct user_id) as active_users
 from activity
