@@ -77,6 +77,8 @@
 -- Bob, Jonathan, Alex and Alice have only one ride and we just order them by the total distances of the ride.
 -- Donald didn't have any rides, the distance travelled by him is 0.
 
+#DONE ON LEETCODE
+
 -- Solution
 Select U.name as name, coalesce(sum(R.distance),0) as travelled_distance 
 from Users U left join Rides R
