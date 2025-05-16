@@ -22,6 +22,8 @@
 -- | 3  | C    | f   | 5500   |
 -- | 4  | D    | m   | 500    |
 
+#DONE ON LEETCODE
+
 -- Solution
 Update salary
 set sex = Case when sex = 'm' then 'f' 
