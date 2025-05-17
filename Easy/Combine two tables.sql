@@ -27,6 +27,7 @@
 
 -- FirstName, LastName, City, State
 
+#DONE ON LEETCODE
 
 -- Solution
 select FirstName, LastName, City, State
