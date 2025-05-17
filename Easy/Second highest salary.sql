@@ -17,6 +17,8 @@
 -- | 200                 |
 -- +---------------------+
 
+#DONE ON LEETCODE
+
 
 -- Solution
 select max(salary) as SecondHighestSalary
