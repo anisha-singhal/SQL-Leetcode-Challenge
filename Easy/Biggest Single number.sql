@@ -21,6 +21,8 @@
 -- Note:
 -- If there is no such number, just output null.
 
+#DONE ON LEETCODE
+
 -- Solution
 Select max(a.num) as num
 from 
