@@ -38,6 +38,15 @@
 -- | 3         | 1         |
 -- +-----------+-----------+
 
+--My Solution
+Select a.player_id, a.device_id
+FROM Activity as a
+JOIN(
+ SELECT player_id, MIN(event_date) as first_login
+ FROM Activity
+ GROUP BY player_id
+ ) as b
+ ON a.player_id = b.player_id AND a.event_date = b.first_login;
 
 -- Solution
 With table1 as
