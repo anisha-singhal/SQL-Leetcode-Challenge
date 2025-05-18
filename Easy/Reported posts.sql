@@ -47,6 +47,14 @@
 -- +---------------+--------------+ 
 -- Note that we only care about report reasons with non zero number of reports.
 
+
+--  My Solution
+SELECT extra as report_reason,  COUNT(DISTINCT post_id) as report_count
+FROM Actions
+WHERE action = 'report' AND action_date = '2019-07-04'
+GROUP BY extra
+
+
 -- Solution
 Select extra as report_reason, count(distinct post_id) as report_count
 from actions
