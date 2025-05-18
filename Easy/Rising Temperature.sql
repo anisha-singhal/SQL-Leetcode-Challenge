@@ -18,6 +18,8 @@
 -- |  4 |
 -- +----+
 
+#DONE ON LEETCODE
+
 -- Solution
 select a.Id
 from weather a, weather b
