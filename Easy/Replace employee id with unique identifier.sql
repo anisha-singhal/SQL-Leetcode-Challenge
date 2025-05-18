@@ -65,6 +65,8 @@
 -- The unique ID of Winston is 3.
 -- The unique ID of Jonathan is 1.
 
+#DONE ON LEETCODE
+
 -- Solution
 select unique_id, name
 from employees e
