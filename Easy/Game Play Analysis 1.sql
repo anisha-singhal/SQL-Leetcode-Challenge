@@ -38,6 +38,8 @@
 -- | 3         | 2016-03-02  |
 -- +-----------+-------------+
 
+#DONE ON LEETCODE
+
 -- Solution
 Select player_id, min(event_date) as first_login
 from Activity
